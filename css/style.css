@@ -724,7 +724,7 @@ form div i {
 
 .failure-icon,
 .error {
-  color: #2dc7ff;
+  color: red;
 }
 
 .success-icon {
