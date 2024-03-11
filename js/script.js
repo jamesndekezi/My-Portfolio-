@@ -37,3 +37,39 @@ window.onscroll = () => {
 
 };
 
+/*=================== Form Validation ==========================*/
+
+document.addEventListener('DOMContentLoaded', function () {
+  const loginForm = document.getElementById('login-form');
+
+  loginForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const usernameInput = document.getElementById('username-input');
+    const passwordInput = document.getElementById('password-input');
+
+    // Validate username
+    if (usernameInput.value.trim() === '') {
+      alert('Please enter your username.');
+      return;
+    }
+
+    // Validate password
+    if (passwordInput.value.trim() === '') {
+      alert('Please enter your password.');
+      return;
+    }
+
+    // If both username and password are filled, submit the form
+    // You can replace this alert with actual form submission logic
+    alert('Form submitted successfully!');
+  });
+});
+
+/*---------------------------/** */
+
+const name = document.getElementById('names');
+const password = document.getElementById('password');
+const form = document.getElementById('password');
+
+
