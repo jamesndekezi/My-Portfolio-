@@ -7,7 +7,12 @@
   <title>Responsive Personal Portfolio Design | James Ndekezi</title>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <script defer src="js/script.js"></script>
+  <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
 </head>
 
 <body>
@@ -268,24 +273,105 @@
 
   <!-- login and logout section  -->
   <section id="login">
-    <h2>Login</h2>
-    <form id="login-form">
-      <label for="username">Username:</label>
-      <input type="text" id="username-input" name="username" required>
-      <label for="password">Password:</label>
-      <input type="password" id="password-input" name="password" required>
-      <button type="submit">Login</button>
-    </form>
-    <div id="forgot-password">
-      <a href="#">Forgot Password?</a>
-    </div>
-    <div id="create-account">
-      <span>Don't have an account?</span>
-      <a href="#">Create New Account</a>
+    <div class="container">
+      <div class="content">
+        <div class="logo">
+          <img src="images/logo.svg" alt="" />
+        </div>
+        <div class="image"></div>
+        <div class="text">
+          Start for free & get <br />
+          attractive offers today !
+        </div>
+      </div>
+      <form id="form">
+        <div class="social">
+          <div class="title">Get Started</div>
+          <div class="question">
+            Already Have an Account? <br />
+            <span>Sign In</span>
+          </div>
+
+          <div class="btn">
+            <div class="btn-1">
+              <img
+                src="https://img.icons8.com/color/30/000000/google-logo.png"
+              />
+              Sign Up
+            </div>
+            <div class="btn-2">
+              <img
+                src="https://img.icons8.com/ios-filled/30/ffffff/facebook-new.png"
+              />
+              Sign Up
+            </div>
+          </div>
+
+          <div class="or">Or</div>
+        </div>
+
+        <!-- /** 
+          * ! user name Input here
+         **/ -->
+
+        <div>
+          <label for="username">User Name</label>
+          <i class="fas fa-user"></i>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Joy Shaheb"
+          />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+          <div class="error"></div>
+        </div>
+
+        <!-- /** 
+          * ! Email Input here
+         **/ -->
+
+        <div>
+          <label for="email">Email</label>
+          <i class="far fa-envelope"></i>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="abc@gmail.com"
+          />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+          <div class="error"></div>
+        </div>
+
+        <!-- /** 
+          * ! Password Input here
+         **/ -->
+
+        <div>
+          <label for="password">Password</label>
+          <i class="fas fa-lock"></i>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password here"
+          />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+          <div class="error"></div>
+        </div>
+
+        <button type="submit" id="submit">Submit</button>
+      </form>
     </div>
   </section>
+  
 
-  <!-- form -->
+  <!-- form validation -->
+  
 
 
 
