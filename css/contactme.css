@@ -1,0 +1,89 @@
+.contact {
+  background-color: var(--bg-color); /* Adjust background color as needed */
+  padding: 60px 0; /* Add padding as needed */
+  height: 100vh; /* Set height to 100% of viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact form {
+  width: 80%; /* Adjust width as needed */
+  max-width: 600px; /* Adjust max-width as needed */
+}
+
+.contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: #333; /* Adjust text color as needed */
+  background: #555454; /* Adjust background color as needed */
+  border-radius: .8rem;
+  margin: .7rem 0;
+}
+
+
+.contact form .input-box input {
+  width: 49%;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.contact form .btn {
+  margin-top: 2rem;
+  cursor: pointer;
+  color: #fff; /* Adjust text color as needed */
+  background-color: #1f242d; /* Adjust background color as needed */
+  padding: 1.5rem 3rem; /* Adjust padding as needed */
+  border-radius: .8rem;
+  font-size: 1.6rem;
+  transition: background-color 0.3s ease;
+}
+
+.contact form .btn:hover {
+  background-color: #0ef; /* Adjust hover background color as needed */
+}
+
+/* Add styles for social login buttons */
+/**
+* ! changing default styles of brower
+**/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+/**
+* ! style rules for content section
+**/
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgb(135, 206, 235);
+  width: 55%;
+  min-height: 98vh;
+  padding: 10px 20px;
+}
+
