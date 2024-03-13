@@ -66,7 +66,83 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-/*---------------Form Validation------------/** */
+/*---------------Form Validation on Longin------------/** */
+// Function to handle editing a blog post
+function editPost(postId) {
+  const post = document.querySelector(`.blog[data-post-id="${postId}"]`);
+  const newContent = prompt('Enter new content:');
+  if (newContent !== null) {
+    post.querySelector('p').textContent = newContent;
+    // Update post content in local storage or send to server
+  }
+}
+
+// Function to handle deleting a blog post
+function deletePost(postId) {
+  const confirmDelete = confirm('Are you sure you want to delete this post?');
+  if (confirmDelete) {
+    const post = document.querySelector(`.blog[data-post-id="${postId}"]`);
+    post.remove();
+    // Remove post data from local storage or send delete request to server
+  }
+}
+
+// Event listeners for editing and deleting posts
+document.querySelectorAll('.edit-btn').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const postId = btn.closest('.blog').dataset.postId;
+    editPost(postId);
+  });
+});
+
+document.querySelectorAll('.delete-btn').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const postId = btn.closest('.blog').dataset.postId;
+    deletePost(postId);
+  });
+});
+
+// Add functionality for liking, disliking, and commenting if needed
+// Function to handle editing a blog post
+function editPost(postId) {
+  const post = document.querySelector(`.blog[data-post-id="${postId}"]`);
+  const newContent = prompt('Enter new content:');
+  if (newContent !== null) {
+    post.querySelector('p').textContent = newContent;
+    // Update post content in local storage or send to server
+  }
+}
+
+// Function to handle deleting a blog post
+function deletePost(postId) {
+  const confirmDelete = confirm('Are you sure you want to delete this post?');
+  if (confirmDelete) {
+    const post = document.querySelector(`.blog[data-post-id="${postId}"]`);
+    post.remove();
+    // Remove post data from local storage or send delete request to server
+  }
+}
+
+// Event listeners for editing and deleting posts
+document.querySelectorAll('.edit-btn').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const postId = btn.closest('.blog').dataset.postId;
+    editPost(postId);
+  });
+});
+
+document.querySelectorAll('.delete-btn').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const postId = btn.closest('.blog').dataset.postId;
+    deletePost(postId);
+  });
+});
+
+// Add functionality for liking, disliking, and commenting if needed
+
+
+
+/*---------------Form Validation on Longin------------/** */
 
 let id = (id) => document.getElementById(id);
 
